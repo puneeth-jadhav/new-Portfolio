@@ -24,7 +24,7 @@ const initialState: PortfoliosState = {
 export const fetchPortfolios = createAsyncThunk(
   'portfolios/fetchPortfolios',
   async () => {
-    const response = await axios.get('http://127.0.0.1:8000/api/v1/portfolios', {
+    const response = await axios.get('http://50.16.209.202:8000/api/v1/portfolios', {
       headers: {},
     });
     console.log(response.data);
@@ -35,7 +35,7 @@ export const fetchPortfolios = createAsyncThunk(
 export const createPortfolio = createAsyncThunk(
   'portfolios/createPortfolio',
   async (portfolioData: { name: string; description?: string }) => {
-    const response = await axios.post('http://127.0.0.1:8000/api/v1/portfolios', portfolioData, {
+    const response = await axios.post('http://50.16.209.202:8000/api/v1/portfolios', portfolioData, {
       headers: {},
     });
     console.log(response);

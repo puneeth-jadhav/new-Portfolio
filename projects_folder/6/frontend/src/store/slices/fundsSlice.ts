@@ -22,7 +22,7 @@ const initialState: FundsState = {
 export const fetchFunds = createAsyncThunk(
   'funds/fetchFunds',
   async ({ page = 1, limit = 10 }: { page?: number; limit?: number } = {}) => {
-    const response = await axios.get('http://127.0.0.1:8000/api/v1/funds', {
+    const response = await axios.get('http://50.16.209.202:8000/api/v1/funds', {
       headers: {},
       params: { page, limit },
     });
