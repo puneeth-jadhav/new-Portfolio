@@ -21,8 +21,8 @@ jobs:
       - name: Build and push Docker image
         uses: docker/build-push-action@v4
         with:
-          context: ./6/frontend
-          file: ./6/frontend/Dockerfile
+          context: ./6/projects_folder/frontend
+          file: ./6/projects_folder/frontend/Dockerfile
           push: true
           tags: ${{ secrets.DOCKER_HUB_USERNAME }}/frontend:${{ github.sha }}
 
