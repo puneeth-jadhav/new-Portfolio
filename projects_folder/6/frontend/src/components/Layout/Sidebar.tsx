@@ -35,7 +35,7 @@ const Sidebar = () => {
             maxWidth: '100%',
           }}
           alt="Logo"
-          src="https://mlops-storage1.s3.amazonaws.com/logos/codebenders_color_logo.png"
+          src="https://cdn-icons-png.flaticon.com/512/2331/2331937.png"
         />
       </Toolbar>
       <Divider />
